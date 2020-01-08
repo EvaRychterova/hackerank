@@ -24,13 +24,9 @@ public class Solution {
             }
         }
 
-        float decimalNegativeNumbers = countNegativeNumbers / countNumbers;
-        float decimalPositiveNumbers = countPositiveNumbers / countNumbers;
-        float decimalZeroNumbers = countZeroNumbers / countNumbers;
-
-        System.out.printf("%.06f %n", decimalPositiveNumbers);
-        System.out.printf("%.06f %n", decimalNegativeNumbers);
-        System.out.printf("%.06f %n", decimalZeroNumbers);
+        System.out.printf("%.06f %n", countPositiveNumbers / countNumbers);
+        System.out.printf("%.06f %n", countNegativeNumbers / countNumbers);
+        System.out.printf("%.06f %n", countZeroNumbers / countNumbers);
     }
 
     public static void main(String[] args) {
