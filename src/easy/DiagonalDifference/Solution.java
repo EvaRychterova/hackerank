@@ -20,7 +20,6 @@ class Result {
     public static int diagonalDifference(List<List<Integer>> arr) {
         // Write your code here
 
-        int diagonalDiff = 0;
         int primaryDiagonalSum = 0;
         int secondaryDiagonalSum = 0;
 
@@ -28,7 +27,7 @@ class Result {
             primaryDiagonalSum += arr.get(i).get(i);
             secondaryDiagonalSum += arr.get(i).get(arr.size() - 1 - i);
         }
-        diagonalDiff = Math.abs(primaryDiagonalSum - secondaryDiagonalSum);
+        int diagonalDiff = Math.abs(primaryDiagonalSum - secondaryDiagonalSum);
         System.out.println(diagonalDiff);
         return diagonalDiff;
     }
